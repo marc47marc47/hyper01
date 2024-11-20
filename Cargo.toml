@@ -1,0 +1,17 @@
+[package]
+name = "hyper01"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+tokio = { version = "1.41.0", features = ["full"] }
+hyper = { version = "0.14.31", features = ["client", "http1", "tcp", "server"] }
+
+[[bin]]
+name = "server"
+path = "src/server.rs"
+
+
+[[bin]]
+name = "client"
+path = "src/client.rs"
